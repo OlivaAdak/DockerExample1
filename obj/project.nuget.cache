@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QCSs37tU7PtHl+Igqgl4J/MKuwFUKRj9IvsmrT069d7lZbkf2kSCV8A6vT8Kw3y8X6aoT1VdVUySxY2xohHAxA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oliva\\source\\repos\\PetHouseDockerEg\\PetHouseDockerEg.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oliva\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
