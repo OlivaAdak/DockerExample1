@@ -42,7 +42,15 @@ namespace PetHouseDockerEg.Controllers
                 Price = 900
 
             });
-            
+            pet.Add(new PetHouse()
+            {
+                PetId =4,
+                PetType = "Rabbit",
+                Age = "10 days",
+                Price = 500
+
+            });
+
         }
         // GET: api/<PetHouseController>
         [HttpGet]

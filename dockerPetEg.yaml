@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dockerpetdepl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: PetHouseDockerEg
+  template:
+    metadata:
+      labels:
+        app: PetHouseDockerEg
+    spec:
+      containers:
+      - name: dockerpetrepos
+        image: dockeregpethouse.azurecr.io/dockerpetrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: dpconfigsn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: PetHouseDockerEg
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: PetHouseDockerEg
